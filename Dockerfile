@@ -1,5 +1,5 @@
 # Use a Node.js image based on Debian, which is much better for Puppeteer/Chromium
-FROM node:18-slim AS base
+FROM public.ecr.aws/docker/library/node:18-slim AS base
 
 # Install essential build tools and system dependencies for Chromium/Puppeteer
 RUN apt-get update && apt-get install -y \
